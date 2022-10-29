@@ -51,20 +51,18 @@ Formalização: passa-se de uma linguagem natural ou do cotidiano para uma lingu
 > 
 > **OBS: Os parênteses determinam o maior nível de prioridade, assim como nas expressões algébricas.**
 
+Fórmula bem-formada (wff - well-formed formula): **sequência qualquer de elementos** do vocabulário do cálculo proposicional contruído a partir das **regras de formação** para o cálculo proposicional (**gramática do cálculo proposicional**).
+1. Uma letra proposicional isolada é uma wff
+2. Se **P** é uma wff, então **~P** também é
+3. Se **P** e **Q** são wffs, então **P ^ Q**, **P v Q**, **P -> Q**, **P <-> Q** também são.
 
-
-
-
+> Exemplos:
+> 
+> A fórmula **P -> Q <-> R** não é uma wff, pois os conectivos possuem a **mesma precedência**.
+> 
+> A fórmula **(A ^ (B <-> C)** não é uma wff, pois **um dos parênteses não foi fechado**.
 
 
 
 ## Referência Bibliográfica:
 BISPO, Carlos A., CASTANHEIRA, Luiz B., FILHO, Oswvaldo M.S., Introdução à Lógica Matemática, Cengage Learning, 2012.
-
-
-
-
-
-
-
-
