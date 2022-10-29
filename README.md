@@ -37,7 +37,8 @@ Palavras indicadoras de Premissas e Conclusão:
 >| supondo que        | então              
 
 
-Validade de um argumento: um argumento é válido se, e somente se, for uma implicação tautológica, sendo impossível todas as *premissas* serem Verdadeiras e a *conclusão* ser Falsa.
+##Validade de um argumento
+Um argumento é válido se, e somente se, for uma implicação tautológica, sendo impossível todas as *premissas* serem Verdadeiras e a *conclusão* ser Falsa.
 
 > Exemplo: Dado um argumento qualquer
 >
@@ -56,10 +57,58 @@ Validade de um argumento: um argumento é válido se, e somente se, for uma impl
 **Um *argumento é inválido* somente quando *todas as suas premissas são verdadeiras* e a *conclusão é falsa*.**
 
 ### (In)Validade x Valor-verdade
-A *Verdade* e a *Falsidade* são *propriedades das proposições*, enquanto a *Validade* e a *Invalidade* são *propriedades dos argumentos*. O **Valor-verdade** depende do *contexto*, enquanto a **Validade* depende da *forma*.
+A *Verdade* e a *Falsidade* são *propriedades das proposições*, enquanto a *Validade* e a *Invalidade* são *propriedades dos argumentos*. O **Valor-verdade** depende do *contexto*, enquanto a *Validade* depende da *forma*.
 
+## Prova direta de validade
+Outra maneira de se provar a validade de um argumento, utilizando: *implicações* e *equivalências tautológicas*.
 
+### Tautologias úteis ###
+Sejam p, q, r, s proposições simples quaisquer.
 
+#### Equivalências tautológicas
+1. Indempotência (IND):
+  >> (p ^ p) $<->$ p <br>
+  >> (p v p) $<->$ p
+
+2. Comutação (COM):
+  >> (p ^ q) $<->$ (q ^ p) <br>
+  >> (p v q) $<->$ (q v p)
+
+3. Associação (ASS):
+  >> ((p ^ q) ^ r) $<->$ (p ^ (q ^ r)) <br>
+  >> ((p v q) v r) $<->$ (p v (q v r)) 
+
+4. Distribuição (DIS):
+  >> (p ^ (q v r)) $<->$ ((p ^ q) v (p ^ r)) <br>
+  >> (p v (q ^ r)) $<->$ ((p v q) v (p v r)) <br>
+  >> (p $->$ (q ^ r)) $<->$ ((p $->$ q) ^ (p $->$ r)) <br>
+  >> (p $->$ (q v r)) $<->$ ((p $->$ q) v (p $->$ r))
+
+5. Leis de Morgan (MOR):
+  >> ~(p v q) $<->$ (~p ^ ~q) <br>
+  >> ~(p ^ q) $<->$ (~p v ~q)
+
+6. Dupla Negação (D.N.):
+  >> ~(~p) $<->$ p
+
+7. Equivalência Material (E.M.):
+  >> (p $<->$ q) $<->$ ((p $<->$ q) ^ (q $<->$ p)) <br>
+  >> (p $<->$ q) $<->$ ((p ^ q) v (~p ^ ~q))
+
+8. Implicação Material (I.M.):
+  >> (p $->$ q) $<->$ (~p v q) 
+
+9. Negação da Implicação Material (N.I.M.):
+  >> ~(p $->$ q) $<->$ (p ^ ~q) 
+
+10. Transposição (TRA):
+  >> (p $->$ q) $<->$ (~q $<->$ ~p) 
+
+11. Importação / Exportação (I.E):
+  >> ((p ^ q) $->$ r) $<->$ (p $->$ (q $->$ r)) 
+
+12. Absurdo (ABD):
+  >> (p $->$ (q ^ ~q)) $<->$ ~p
 
 
 ## Referência Bibliográfica:
