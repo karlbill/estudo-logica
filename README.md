@@ -1,55 +1,64 @@
-# Estudo de Lógica
-#### Estudo de Lógica Matemática
+# Estudo de Lógica: Tabela-verdade
+#### Instrumento para determinação de todas as possíveis combinações dos valores-verdade das proposições simples.
 
 ## Introdução
-A Lógica é a ciência que estabelece os princípios e métodos que permitem avaliar a validade ou invalidade dos argumentos, muitas vezes referida como Formal, Simbólica ou Matemática.
+O valor-verdade de uma proposição composta é obtido de forma única a partir dos valores-verdade atribuídos às proposições simples que a compõem.
+> Obs: a atribuição de um valor-verdade para uma proposição simples depende de seu contexto e faz parte do estudo semântico.
 
-**Argumento**: contido por uma ou mais sentenças, denominadas ***premissas*** que levam a uma ***conclusão***.
+Tabela-Verdade de Proposições Simples (quaisquer): **p** e **q**:
+>|      |      |      |      |  Conj. | Disj. | Cond.  | Bicond. |
+>| :--: | :--: | :--: | :--: |  :--:  |  :--: |  :--:  |   :--:  |
+>|  p   |   q  |  ~p  |  ~q  |  p ^ q | p v q | p -> q | p <-> q |
+>|  V   |   V  |   V  |  V   |   V    |   V   |   V    |    V    |
+>|  V   |   F  |   V  |  F   |   F    |   V   |   F    |    F    |
+>|  F   |   V  |   F  |  V   |   F    |   V   |   V    |    F    |
+>|  F   |   F  |   F  |  F   |   F    |   F   |   V    |    V    |
+ 
+O número de linhas de uma Tabela-Verdade depende do número de proposições simples presentes. 
+> Fórmula: $2^n$, sendo n o número de proposições simples.
 
-Nesse sentido, a Lógica fornece os meios necessários para a análise dos argumentos a partir de sua forma ou estrutura mas não no que tange ao conteúdo desses argumentos.
 
-3 concepções baseadas em 3 períodos distintos da sua evolução: 
->| Concepção             | Período        | Data               | Marcos temporáis       | Autores                |
->| --------------------- | -------------- |--------------------|------------------------|------------------------|
->| Sistema de regras     | Grego          | IV a.C - XIX       | Organon                | Aristóteles            |
->| Conjunto de leis      | booleano       | XIX - XX           |                        | Boole e Morgan         |
->| Estrutura linguística | contemporâneo  | XXI...             | Principia Mathematica  | B. Russel e Whitehead  |
+# Capítulo 3: Classificação das Proposições
+#### As proposições compostas podem ser de 3 tipos: Tautológicas, Contraditórias e Contingentes.
 
-**OBS:** A **Lógica** trata de **entidades linguísticas** e não do modo como pensamos ou raciocinamos, portanto, do **discurso**. O **estudo do raciocínio ou do modo de pensar** pertence ao **campo da Psicologia**.
+- **Proposição Composta Tautológica**: são sempre Verdadeiras, independente do valor lógico atribuído a cada uma de suas premissas simples.
+- **Proposição Composta Contraditória**: são sempre Falsas, independente do valor lógico atribuído a cada uma de suas premissas simples.
+- **Proposição Composta Contingente**: podem ser Falsas ou Verdadeiras, dependendo do valor lógico atribuído às suas sentenças simples.
 
-1. Tratados lógicos sistematizados em uma coleção denominada Organon. (Aristóteles)
-> Leibniz(1646-1716) apresentava um sistema em perspectiva de uma Ideografia Universal próxima da concepção contemporânea e próxima dos símbolos algébricos.
-2. Evolução por vias algébricas: leis como resultado do paralelo de fórmulas algébricas com o cálculo de classes. (Ggeorge Boole e Augustus de Morgan)
-> G. Frege(1848-1925) desenvolveu um sistema de lógica por um método linguístico (Cálculo Proposicional), se afastando do modo algébrico e com influência no modo contemporâneo.
+# Capítulo 4: Tautologias
 
-> No **séc. XIX** surgem as **geometrias não-euclidianas** (Lobachevsky, Bolyai, Gauss, Riemann...) e a **Teoria de Conjuntos de Cantor** que migraram os **estudos dos Fundamentos da Matemática associados ao desenvolvimento da Lógica**.
+- **Implicação tautológica**: é uma proposição condicional tautológica. 
+> Exemplo: p ^ q -> p
+>|  p   |   q  |  p ^ q | **p ^ q -> p** |
+>| :--: | :--: |  :--:  |       :--:     |
+>|  V   |   V  |   V    |      **V**     |
+>|  V   |   F  |   F    |      **V**     |
+>|  F   |   V  |   F    |      **V**     |
+>|  F   |   F  |   F    |      **V**     |
+>
+> Ou seja: **p ^ q implica tautologicamente p**.
 
-3. Publicação de 3 volumes do Principia Mathematica (Whitehead e Bertrand Russel) e On the Consistency of Arithmetic de Frances Herbrand, obras que transformaram a Lógica em uma nova ciência.
-> Aqui o enfoque linguístico se impõe. A Lógica como linguagem, ou *sistema de signos*, pressupõe uma *sintaxe* e uma *semântica*.
-- **Sintaxe**: regras ou leis de combinação de signos
-- **Semântica**: interpretação e significado dos signos.
+**Obs: A implicação tautológica é fundamental para o estudo da validade de um argumento.**
 
-Áreas de pesquisa na Lógica Contemporânea:
->| Tema                                      | Autores                |
->| ------------------------------------------|------------------------|
->| Teorema da Incompletude                   | K. Gödel               |
->| Teoria Geral dos Processos Computáveis    | Alan Turing            |
->| Teoria da Recursão                        | Church, Kleene e Rosser|
->| Teoria de Modelos                         | Tarski, Robinson       |
->| Lógica Paraconsistente                    | Newton Costa           |
+- **Equivalência Tautológica**: quando uma proposição bicondicional é tautológica.
+> Exemplo: **~(p ^ q) <-> (~p v ~q)**
+> (Equivalência tautológica denominada **Lei de Morgan**.)
+>|  p   |   q  |  ~p  |  ~q  |  p ^ q | ~(p ^ q) | ~p v ~q | ~(p^q) <-> (~p v ~q) |
+>| :--: | :--: | :--: | :--: |  :--:  |   :--:   |   :--:  |           :--:       |
+>|  V   |   V  |   V  |  V   |   V    |     F    |    F    |            V         |
+>|  V   |   F  |   V  |  F   |   F    |     V    |    V    |            V         |
+>|  F   |   V  |   F  |  V   |   F    |     V    |    V    |            V         |
+>|  F   |   F  |   F  |  F   |   F    |     V    |    V    |            V         |
 
-Várias Lógicas:
->| Clássica                                               | Não Clássica - Complementar                                     | Não Clássica - Heterodoxa |
->| -------------------------------------------------------|-----------------------------------------------------------------|---------------------------|
->| Teoria de Conjuntos                                    | Epistêmica clássica: Lógica da Crença e Lógica do Conhecimento  | Paracompletas             |
->| Teoria de Tipos                                        | Modal Clássica                                                  | Paraconsistentes          |
->| Teoria de Categorias como fundamento da Matemática     | Clássica da Ação                                                | Não aléticas              |
->|                                                        | Intencionais clássicas                                          | Quânticas                 |
->|                                                        | Indutiva Clássica                                               | Relevantes                |
->|                                                        |                                                                 | Modais Paraconsistentes   |
->|                                                        |                                                                 | Epistêmicas paracompletas |
->|                                                        |                                                                 | Indutivas paraconsistêntes|
-
+Propriedades:
+1. Reflexiva
+  - **p -> p**                                (implicação tautológica)
+  - **p <-> p**                               (equivalência tautológica)
+2. Simétrica
+  - **(p <-> q) |-- (q -> p)**                (implicação tautológica)
+3. Transitiva
+  - **(p -> q) ^ (q ^ r) -> (p -> r)**        (implicação tautológica)
+  - **(p <-> q) ^ (q <-> r) |-- (p <-> r)**   (implicação tautológica) 
 
 
 ## Referência Bibliográfica:
