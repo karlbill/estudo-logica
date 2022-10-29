@@ -1,54 +1,60 @@
-# Estudo de Lógica
-#### Estudo de Lógica Matemática
+# Estudo de Lógica: Cálculo Proposicional
+#### Estudo da validade dos argumentos a partir da *linguagem proposicional*.
 
 ## Introdução
-A Lógica é a ciência que estabelece os princípios e métodos que permitem avaliar a validade ou invalidade dos argumentos, muitas vezes referida como Formal, Simbólica ou Matemática.
+O **Cálculo Proposicional** estuda a **validade de argumentos** através de sua **linguagem proposicional**, que possui **dois aspectos**: o *sintático* e o *semântico*.
+- Sintático: símbolos, regras de formação e de dedução
+- Semântico: valoração das fórmulas (Verdadeiro ou Falso)
+> Daí resultam Tabelas-verdade, Tautologias e Métodos Dedutivos.
 
-**Argumento**: contido por uma ou mais sentenças, denominadas ***premissas*** que levam a uma ***conclusão***.
+## Proposição
+Propriedade valor-verdade: uma *proposição* é uma *sentença declarativa* que pode ser **Verdadeira** ou **Falsa**.
+> Disso decorre que uma sentença que não pode ser avaliada como Verdadeira ou Falsa não é uma proposição ou sentença.
 
-Nesse sentido, a Lógica fornece os meios necessários para a análise dos argumentos a partir de sua forma ou estrutura mas não no que tange ao conteúdo desses argumentos.
+Convencionou-se utilizar letras maiúsculas para simbolizar proposições: A, B, C, ...
+> Exemplo: Se eu estudar bem a disciplina de Lógica, então eu criarei melhores argumentos.
+> P: estudar bem a disciplina de Lógica
+> Q: criar melhores argumentos.
+> Conclusão: Se P, então Q.
 
-3 concepções baseadas em 3 períodos distintos da sua evolução: 
->| Concepção             | Período        | Data               | Marcos temporáis       | Autores                |
->| --------------------- | -------------- |--------------------|------------------------|------------------------|
->| Sistema de regras     | Grego          | IV a.C - XIX       | Organon                | Aristóteles            |
->| Conjunto de leis      | booleano       | XIX - XX           |                        | Boole e Morgan         |
->| Estrutura linguística | contemporâneo  | XXI...             | Principia Mathematica  | B. Russel e Whitehead  |
+Princípios da Lógica Clássica:
+>| Princípio              | Conceito                                                                                           | Símbologia                 |
+>| ---------------------- |----------------------------------------------------------------------------------------------------| -------------------------- |
+>| da Identidade          | Toda proposição é idêntica a si mesma.                                                             | P é P                      |
+>| da Não-Contradição     | Uma proposição não pode ser Verdadeira e Falsa ao mesmo tempo.                                     | ~ (P e não P)              |
+>| do Terceiro Excluído   | Toda proposição ou é Verdadeira ou é Falsa, não existindo um terceiro valor que ela possa assumir. | P ou não P (OU Exclusivo)  |
 
-**OBS:** A **Lógica** trata de **entidades linguísticas** e não do modo como pensamos ou raciocinamos, portanto, do **discurso**. O **estudo do raciocínio ou do modo de pensar** pertence ao **campo da Psicologia**.
+- Proposição Simples: se, e somente se, contiver uma única afirmação.
+- Proposição Composta: constituída por uma sequência finita de duas ou mais proposições simples.
 
-1. Tratados lógicos sistematizados em uma coleção denominada Organon. (Aristóteles)
-> Leibniz(1646-1716) apresentava um sistema em perspectiva de uma Ideografia Universal próxima da concepção contemporânea e próxima dos símbolos algébricos.
-2. Evolução por vias algébricas: leis como resultado do paralelo de fórmulas algébricas com o cálculo de classes. (Ggeorge Boole e Augustus de Morgan)
-> G. Frege(1848-1925) desenvolveu um sistema de lógica por um método linguístico (Cálculo Proposicional), se afastando do modo algébrico e com influência no modo contemporâneo.
+Estudaremos 5 Conectivos proposicionais do Cálculo Proposicional (Conectivos Sentenciais ou Proposicionais) e a respectiva classificação:
+>| Conectivo              | Classificação          | Símbolo  | Palavras comuns que podem representar                                             |
+>| ---------------------- | ---------------------- | -------- | --------------------------------------------------------------------------------- |
+>| e                      | Conjunção              |    ^     |    mas, todavia, contudo, no entanto, visto que, enquanto, além disso, embora     |
+>| ou                     | Disjunção              |    v     |    **O Cálculo Proposicional trata apenas do OU Inclusivo**                       |
+>| se ..., então ...      | Condicional            |   -->    |    Antecedente --> Consequente                                                    |
+>| se, e somente se, ...  | Bi-condicional         |   <-->   |    Conjunção de dois condicionais (ida e volta)                                   |
+>| não                    | Negação                |    ~     |    Conectivo unário (não liga duas proposições)                                   |
 
-> No **séc. XIX** surgem as **geometrias não-euclidianas** (Lobachevsky, Bolyai, Gauss, Riemann...) e a **Teoria de Conjuntos de Cantor** que migraram os **estudos dos Fundamentos da Matemática associados ao desenvolvimento da Lógica**.
+A **Lógica Matemática** trata da **relação entre proposições**, considerando a *forma* que essa relação assume e *não o seu conteúdo*.
+> Cada **letra maiúscula** representa uma **proposição bem-definida** (*constante*) e cada **letra minúscula** representa uma **proposição qualquer** (*variável*).
 
-3. Publicação de 3 volumes do Principia Mathematica (Whitehead e Bertrand Russel) e On the Consistency of Arithmetic de Frances Herbrand, obras que transformaram a Lógica em uma nova ciência.
-> Aqui o enfoque linguístico se impõe. A Lógica como linguagem, ou *sistema de signos*, pressupõe uma *sintaxe* e uma *semântica*.
-- **Sintaxe**: regras ou leis de combinação de signos
-- **Semântica**: interpretação e significado dos signos.
+Formalização: passa-se de uma linguagem natural ou do cotidiano para uma linguagem artificial formada pelos três tipos de símbolos: 
+- letras proposicionais (A, B, C, ...)
+- conectivos lógicos (~, ^, v, ->, <->) 
+- símbolos de pontuação ( () parênteses).
 
-Áreas de pesquisa na Lógica Contemporânea:
->| Tema                                      | Autores                |
->| ------------------------------------------|------------------------|
->| Teorema da Incompletude                   | K. Gödel               |
->| Teoria Geral dos Processos Computáveis    | Alan Turing            |
->| Teoria da Recursão                        | Church, Kleene e Rosser|
->| Teoria de Modelos                         | Tarski, Robinson       |
->| Lógica Paraconsistente                    | Newton Costa           |
+> Ordem de prioridade dos conectivos:
+> 1. ~
+> 2. ^ v
+> 3. -> <->
+> 
+> **OBS: Os parênteses determinam o maior nível de prioridade, assim como nas expressões algébricas.**
 
-Várias Lógicas:
->| Clássica                                               | Não Clássica - Complementar                                     | Não Clássica - Heterodoxa |
->| -------------------------------------------------------|-----------------------------------------------------------------|---------------------------|
->| Teoria de Conjuntos                                    | Epistêmica clássica: Lógica da Crença e Lógica do Conhecimento  | Paracompletas             |
->| Teoria de Tipos                                        | Modal Clássica                                                  | Paraconsistentes          |
->| Teoria de Categorias como fundamento da Matemática     | Clássica da Ação                                                | Não aléticas              |
->|                                                        | Intencionais clássicas                                          | Quânticas                 |
->|                                                        | Indutiva Clássica                                               | Relevantes                |
->|                                                        |                                                                 | Modais Paraconsistentes   |
->|                                                        |                                                                 | Epistêmicas paracompletas |
->|                                                        |                                                                 | Indutivas paraconsistêntes|
+
+
+
+
 
 
 
