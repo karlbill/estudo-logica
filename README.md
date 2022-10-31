@@ -43,7 +43,7 @@ Em **funções proposicionais quantificadas existencialmente**:
 
 ## Regras de formação do cálculo de predicados
 1. Um *predicado* **P** seguido de um *termo* **x** é uma *wff* simbolizada por $P_x$
-2. $P_x$ é *wff* $->$ ~$P_x$ é *wff*
+2. $P_x$ é *wff* $->$ ~ $P_x$ é *wff*
 3. $P_x$ e $Q_x$ são *wff* $->$ $P_x$ ^ $Q_x$ , $P_x$ v $Q_x$ , $P_x$ $->$ $Q_x$ , $P_x$ $<->$ $Q_x$ são *wff*
 4. $P_x$ $->$ é *wff* $->$ ∀x (Px) e ∃x (Px) também são *wff*
 
