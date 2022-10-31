@@ -102,7 +102,7 @@ Sejam **p, q, r, s** proposições simples quaisquer.
   >> **~(p $->$ q) $<->$ (p ^ ~q)** 
 
 10. Transposição (TRA):
-  >> **(p $->$ q) $<->$ (~q $<->$ ~p)** 
+  >> **(p $->$ q) $<->$ (~q $->$ ~p)** 
 
 11. Importação / Exportação (I.E):
   >> **((p ^ q) $->$ r) $<->$ (p $->$ (q $->$ r))** 
