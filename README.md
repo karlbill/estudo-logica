@@ -67,15 +67,18 @@ Sejam **p, q, r, s** proposições simples quaisquer.
 
 #### Equivalências tautológicas
 1. Indempotência (IND):
-  >> **(p ^ p) $<=>$ p <br>
+  >> **(p ^ p) $<=>$ p
+  >> 
   >> (p v p) $<=>$ p**
 
 2. Comutação (COM):
-  >> **(p ^ q) $<=>$ (q ^ p) <br>
+  >> **(p ^ q) $<=>$ (q ^ p)
+  >> 
   >> (p v q) $<=>$ (q v p)**
 
 3. Associação (ASS):
-  >> **((p ^ q) ^ r) $<=>$ (p ^ (q ^ r)) <br>
+  >> **((p ^ q) ^ r) $<=>$ (p ^ (q ^ r))
+  >> 
   >> ((p v q) v r) $<=>$ (p v (q v r))** 
 
 4. Distribuição (DIS):
@@ -85,14 +88,16 @@ Sejam **p, q, r, s** proposições simples quaisquer.
   >> (p $->$ (q v r)) $<=>$ ((p $->$ q) v (p $->$ r))**
 
 5. Leis de Morgan (MOR):
-  >> **~(p v q) $<=>$ (~p ^ ~q) <br>
+  >> **~(p v q) $<=>$ (~p ^ ~q)
+  >> 
   >> ~(p ^ q) $<=>$ (~p v ~q)**
 
 6. Dupla Negação (D.N.):
   >> **~(~p) $<=>$ p**
 
 7. Equivalência Material (E.M.):
-  >> **(p $<->$ q) $<=>$ ((p $<=>$ q) ^ (q $<=>$ p)) <br>
+  >> **(p $<->$ q) $<=>$ ((p $<=>$ q) ^ (q $<=>$ p))
+  >> 
   >> (p $<->$ q) $<=>$ ((p ^ q) v (~p ^ ~q))**
 
 8. Implicação Material (I.M.):
@@ -116,10 +121,12 @@ Sejam **p, q, r, s** proposições simples quaisquer.
 
 2. Simplificação (SIM)
   >> **(p ^ q) $->$ p**
+  >> 
   >> **(p ^ q) $->$ q**
 
 3. Conjunção (CON)
   >> **(p ^ q) $->$ (p ^ q)**
+  >> 
   >> **(p ^ q) $->$ (q ^ p)**
 
 4. Absorção (ABS)
@@ -139,6 +146,7 @@ Sejam **p, q, r, s** proposições simples quaisquer.
 
 9. Silogismo Disjuntivo (S.D.)
   >> **((p v q) ^ ~p) $->$ q **
+  >> 
   >> **((p v q) ^ ~q) $->$ p **
 
 10. Silogismo Hipotético (S.H.)
