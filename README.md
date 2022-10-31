@@ -67,48 +67,48 @@ Sejam **p, q, r, s** proposições simples quaisquer.
 
 #### Equivalências tautológicas
 1. Indempotência (IND):
-  >> **(p ^ p) $<->$ p <br>
-  >> (p v p) $<->$ p**
+  >> **(p ^ p) $<=>$ p <br>
+  >> (p v p) $<=>$ p**
 
 2. Comutação (COM):
-  >> **(p ^ q) $<->$ (q ^ p) <br>
-  >> (p v q) $<->$ (q v p)**
+  >> **(p ^ q) $<=>$ (q ^ p) <br>
+  >> (p v q) $<=>$ (q v p)**
 
 3. Associação (ASS):
-  >> **((p ^ q) ^ r) $<->$ (p ^ (q ^ r)) <br>
-  >> ((p v q) v r) $<->$ (p v (q v r))** 
+  >> **((p ^ q) ^ r) $<=>$ (p ^ (q ^ r)) <br>
+  >> ((p v q) v r) $<=>$ (p v (q v r))** 
 
 4. Distribuição (DIS):
-  >> **(p ^ (q v r)) $<->$ ((p ^ q) v (p ^ r)) <br>
-  >> (p v (q ^ r)) $<->$ ((p v q) v (p v r)) <br>
-  >> (p $->$ (q ^ r)) $<->$ ((p $->$ q) ^ (p $->$ r)) <br>
-  >> (p $->$ (q v r)) $<->$ ((p $->$ q) v (p $->$ r))**
+  >> **(p ^ (q v r)) $<=>$ ((p ^ q) v (p ^ r)) <br>
+  >> (p v (q ^ r)) $<=>$ ((p v q) v (p v r)) <br>
+  >> (p $->$ (q ^ r)) $<=>$ ((p $->$ q) ^ (p $->$ r)) <br>
+  >> (p $->$ (q v r)) $<=>$ ((p $->$ q) v (p $->$ r))**
 
 5. Leis de Morgan (MOR):
-  >> **~(p v q) $<->$ (~p ^ ~q) <br>
-  >> ~(p ^ q) $<->$ (~p v ~q)**
+  >> **~(p v q) $<=>$ (~p ^ ~q) <br>
+  >> ~(p ^ q) $<=>$ (~p v ~q)**
 
 6. Dupla Negação (D.N.):
-  >> **~(~p) $<->$ p**
+  >> **~(~p) $<=>$ p**
 
 7. Equivalência Material (E.M.):
-  >> **(p $<->$ q) $<->$ ((p $<->$ q) ^ (q $<->$ p)) <br>
-  >> (p $<->$ q) $<->$ ((p ^ q) v (~p ^ ~q))**
+  >> **(p $<->$ q) $<=>$ ((p $<=>$ q) ^ (q $<=>$ p)) <br>
+  >> (p $<->$ q) $<=>$ ((p ^ q) v (~p ^ ~q))**
 
 8. Implicação Material (I.M.):
-  >> **(p $->$ q) $<->$ (~p v q)** 
+  >> **(p $->$ q) $<=>$ (~p v q)** 
 
 9. Negação da Implicação Material (N.I.M.):
-  >> **~(p $->$ q) $<->$ (p ^ ~q)** 
+  >> **~(p $->$ q) $<=>$ (p ^ ~q)** 
 
 10. Transposição (TRA):
-  >> **(p $->$ q) $<->$ (~q $->$ ~p)** 
+  >> **(p $->$ q) $<=>$ (~q $->$ ~p)** 
 
 11. Importação / Exportação (I.E):
-  >> **((p ^ q) $->$ r) $<->$ (p $->$ (q $->$ r))** 
+  >> **((p ^ q) $->$ r) $<=>$ (p $->$ (q $->$ r))** 
 
 12. Absurdo (ABD):
-  >> **(p $->$ (q ^ ~q)) $<->$ ~p**
+  >> **(p $->$ (q ^ ~q)) $<=>$ ~p**
 
 ## Implicações Tautológicas
 1. Adição (ADI)
