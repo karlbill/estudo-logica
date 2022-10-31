@@ -83,11 +83,11 @@ Provar a validade de argumentos que envolvam funções proposicionais quantifica
 **αc $->$ ∃x (αx)** 
 > Se concluirmos que um termo c está associado ao predicado α, então existe ao menos um termo associado a α.
 
-## Generalização Universal (E.U.)
+## Generalização Universal (G.U.)
 **αc $->$ ∀x (αx)**
 > Se o termo c tomado na exemplificação pode ser qualquer um, então qualquer termo está associado a α.
 
-**Obs: a Exemplificação Existencial sempre deve ser executada antes da Exemplificação Universal.**
+Obs: **a Exemplificação Existencial sempre deve ser executada antes da Exemplificação Universal.**
 
 
 ## Referência Bibliográfica:
