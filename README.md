@@ -50,7 +50,7 @@ Em **funções proposicionais quantificadas existencialmente**:
 ## Equivalência entre quantificadores
 Útil para transformarmos as funções proposicionais quatificadas em sua forma não negativa, o que facilita a prova de sua validade.
 
-###Equivalências:
+- Equivalências:
 1. **¬∃x (αx)** é equivalente a **∀x ¬(αx)**   Não existe um *termo* **x** associado ao *predicado* **α** $<=>$ todo *termo* **x** não está associado ao *predicado* **α**
 2. **¬∀x (αx) é equivalente a ∃x ¬(αx)**    Não é todo **x** que está associado ao *predicado* **α** $<=>$ existe pelo menos um **x** que não está associado a **α**
 > Exemplo: Nem todos os animais não são domésticos.
